@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>test_project</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>test_project</name>
+  <url>http://maven.apache.org</url>
+
+  <!-- Arquivo de propriedades do projeto tem uma configuração para o meu código rodar o java 8  -->
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>  <!--Aqui tem uma configuração para o meu código rodar o java 8-->
+    <maven.compiler.target>1.8</maven.compiler.target>  <!--Aqui o meu arquivo target que são os "Binarios"-->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  <!--Aqui é usado UTF-8 para poder usar acentos e letras com pontuação-->
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>  <!--Tanto o source e output Encoding fazer essas modificação-->
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+
+      <!--Dependência para fazer o selenium funcionar no Chrome -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-chrome-driver</artifactId>
+      <version>3.141.59</version>
+      <scope>test</scope>
+    </dependency>
+
+      <!--Dependência que fornece ferramentas ou códigos facilitadores para usar com o selenium -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-support</artifactId>
+      <version>3.141.59</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+</project>
